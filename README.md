@@ -6,8 +6,16 @@ Userswitch is a Rails plugin for switching between commonly used roles and users
 
 ## Example
 
+By default, the gem will output a chain of buttons as follows
+
 ![pic1](us1.png)
+
+By clicking on a button, you switch to a different user
+
 ![pic2](us2.png)
+
+Different roles can have different colors
+
 ![pic3](us3.png)
 
 ## How to install
