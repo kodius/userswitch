@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["matija"]
   spec.email         = ["mmunjako@gmail.com"]
 
-  spec.summary       = "Switch between various user roles on your Rails app."
+  spec.summary       = "Userswitch is a Rails plugin for switching between commonly used roles and users. It's particularly useful for development and staging environments when you often need to switch between various accounts. It saves you from the hassle of logging in or out."
   spec.homepage      = "https://github.com/kodius/userswitch"
   spec.license       = "MIT"
 
