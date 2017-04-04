@@ -20,11 +20,11 @@ Different roles can have different colors so as to be more noticeable.
 
 ## How to install
 
-Add in Gemfile.
+Add it to your app's Gemfile and run bundle
 ```ruby
 gem "userswitch"
 ```
-Or manually
+or install it manually
 ```ruby
 gem install userswitch
 ```
@@ -33,6 +33,6 @@ gem install userswitch
 
 Inside of your template/view, you can call users with (showing only users with negative id):
 
- ``` Userswitch.users.html_safe  ```
+``` Userswitch.users.html_safe  ```
 
-
+The above command will generate the required HTML output to make the switching work.
