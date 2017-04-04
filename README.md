@@ -8,15 +8,15 @@ Userswitch is a Rails plugin for switching between commonly used roles and users
 
 By default, the gem will output a chain of buttons as follows
 
-![pic1](us1.png)
+![pic1](https://raw.githubusercontent.com/kodius/userswitch/master/us1.png)
 
 By clicking on a button, your Rails app will switch to a different user, that is, your session will change to that of a different account and save you the time you might otherwise spend clicking on logout links and filling in forms to log as a different user.
 
-![pic2](us2.png)
+![pic2](https://raw.githubusercontent.com/kodius/userswitch/master/us2.png)
 
 Different roles can have different colors so as to be more noticeable.
 
-![pic3](us3.png)
+![pic3](https://raw.githubusercontent.com/kodius/userswitch/master/us3.png)
 
 ## How to install
 
