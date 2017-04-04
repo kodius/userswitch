@@ -15,7 +15,7 @@ module Userswitch
     users.each do |user|
       id = user.last['id']
       color = btn_color(roles[user.last['role']])
-      ceo_html += "<a href=\"/change-user/#{id}\" class=\"btn #{id} btn-outline #{color} btn-sm\">#{user.last["name"]}</a> \n"
+      ceo_html += "<a href=\"/change-user/#{id}\" class=\"btn #{id} #{color} btn-sm\">#{user.last["name"]}</a> \n"
     end
     ceo_html.html_safe
   end
