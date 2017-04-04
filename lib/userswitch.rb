@@ -4,6 +4,8 @@ require 'userswitch/engine'
 module Userswitch
   def initialize_switch_users
     # AdminUser.where('id < 0')
+    # TODO ovo ce ucitat iz file-a ili seedova sere, Adminusere itd.
+    # nece bit where
     User.where('id < 0')
   end
 
