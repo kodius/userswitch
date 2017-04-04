@@ -1,0 +1,29 @@
+## available colors: [red, dark-blue, light-blue, green, yellow, gray, white]
+# name of role: color_name(need to be spelled right)
+# 12 roles max
+Roles:
+  admin: red
+  user: dark-blue
+  dog: green
+  cat: yellow
+# 12 SwitchUsers max
+SwitchUsers:
+  User1:
+    id: -1
+    name: Marko
+    role: user
+  #
+  User2:
+    id: -2
+    name: Kolinda
+    role: admin
+  #
+  User3:
+    id: -3
+    name: Mirko
+    role: dog
+  #
+  User4:
+    id: -4
+    name: Dean
+    role: cat

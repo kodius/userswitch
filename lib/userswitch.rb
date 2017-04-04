@@ -3,24 +3,50 @@ require 'userswitch/engine'
 
 module Userswitch
   def initialize_switch_users
-    # AdminUser.where('id < 0')
-    # TODO ovo ce ucitat iz file-a ili seedova sere, Adminusere itd.
-    # nece bit where
-    User.where('id < 0')
+    YAML.load_file('config/file.yml')
   end
 
   def create_button_from_user
     ceo_html = ''
-    initialize_switch_users.each do |user|
-      # pogleda koja je rola, ovisno o roli dodjelimo clase iz html-a css-a
-      ceo_html += "<a href=\"/change-user/#{user.id}\" class=\"btn #{user.id} btn-outline btn-info btn-sm\">#{user.email}</a> \n"
+    switch_users_yml = initialize_switch_users
+    roles = switch_users_yml['Roles']
+    users = switch_users_yml['SwitchUsers']
+    # TODO provjeru da ih je 12
+    users.each do |user|
+      id = user.last['id']
+      color = btn_color(roles[user.last['role']])
+      ceo_html += "<a href=\"/change-user/#{id}\" class=\"btn #{id} btn-outline #{color} btn-sm\">#{user.last["name"]}</a> \n"
     end
     ceo_html.html_safe
+  end
+
+  def btn_color(color)
+    case color
+    when 'red'
+      'btn-danger'
+    when 'dark-blue'
+      'btn-primary'
+    when 'light-blue'
+      'btn-info'
+    when 'green'
+      'btn-success'
+    when 'yellow'
+      'btn-warning'
+    when 'gray'
+      'btn-basic'
+    when 'white'
+      'btn-default'
+    else
+      'btn-primary'
+    end
   end
 
   def users
     create_button_from_user
   end
 
-  module_function :users, :create_button_from_user, :initialize_switch_users
+  module_function :users,
+                  :create_button_from_user,
+                  :initialize_switch_users,
+                  :btn_color
 end
