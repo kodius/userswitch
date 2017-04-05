@@ -18,6 +18,12 @@ Different roles can have different colors so as to be more noticeable.
 
 ![pic3](https://raw.githubusercontent.com/kodius/userswitch/master/us3.png)
 
+## Requirements
+```ruby
+gem "bootstrap"
+gem "devise"
+```
+
 ## How to install
 
 Add it to your app's Gemfile and run bundle
@@ -30,15 +36,16 @@ gem install userswitch
 ```
 
 ## How to use
-
-Create file.yml inside you config folder with:
+Create userswitch.yml inside you config folder with:
 
 ```ruby
 rake userswitch:create_file
 ```
 
-Inside of your template/view, you can call users with (showing only users from yours file.yml):
+Inside of your template/view, you can call users with (showing only users from yours userswitch.yml):
 
-``` Userswitch.users(current_user).html_safe  ```
+```ruby
+Userswitch.users(current_user)
+```
 
 The above command will generate the required HTML output to make the switching work.

@@ -18,7 +18,7 @@ module Userswitch
     roles = switch_users_yml['Roles']
     users = switch_users_yml['SwitchUsers']
     raise 'UserSwitch no roles defined in config/userswitch.yml' if roles.nil?
-    raise ' UserSwitch no users defined in config/userswitch.yml' if users.nil?
+    raise 'UserSwitch no users defined in config/userswitch.yml' if users.nil?
 
     users.each do |user|
       role = user.last['role']
@@ -31,7 +31,7 @@ module Userswitch
       raise "UserSwitch #{user.first} has no name" if name.nil?
       ceo_html += "<a href=\"/change-user/#{id}&#{role}\" class=\"btn #{id} #{color}\">#{name}</a> \n"
     end
-    ceo_html.html_safe
+    ceo_html
   end
 
   def btn_color(color)
@@ -56,7 +56,7 @@ module Userswitch
   end
 
   def users(current_user)
-    create_button_from_user(current_user.id)
+    create_button_from_user(current_user.id).html_safe
   end
 
   module_function :users,
