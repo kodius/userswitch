@@ -6,8 +6,8 @@ require 'userswitch/version'
 Gem::Specification.new do |spec|
   spec.name          = "userswitch"
   spec.version       = Userswitch::VERSION
-  spec.authors       = ["matija"]
-  spec.email         = ["mmunjako@gmail.com"]
+  spec.authors       = ["kodius"]
+  spec.email         = ["kresimir.bojcic@krokodil.hr"]
 
   spec.summary       = "Userswitch is a Rails plugin for switching between commonly used roles and users. It's particularly useful for development and staging environments when you often need to switch between various accounts. It saves you from the hassle of logging in or out."
   spec.homepage      = "https://github.com/kodius/userswitch"
