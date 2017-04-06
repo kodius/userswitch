@@ -56,7 +56,7 @@ module Userswitch
   end
 
   def users(current_user)
-    create_button_from_user(current_user.id).html_safe
+    create_button_from_user(current_user.try(:id)).html_safe
   end
 
   module_function :users,
