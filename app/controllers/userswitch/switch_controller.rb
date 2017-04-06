@@ -4,6 +4,7 @@ module Userswitch
     before_action :authenticate_user!, except: [:switch_user]
 
     def switch_user
+      sign_out
       sign_in(params[:role].constantize.find(params[:id]))
       redirect_to :back
     end
