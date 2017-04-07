@@ -4,7 +4,7 @@
 
 Userswitch is a Rails plugin for switching between commonly used roles and users. It's particularly useful for development and staging environments when you often need to switch between various accounts. It saves you from the hassle of logging in or out.
 
-![alt](https://cloud.githubusercontent.com/assets/17185440/24799678/d26d1118-1b9c-11e7-8152-3d2f2cfa5279.png)
+![alt](https://cloud.githubusercontent.com/assets/17185440/24801208/7e6dcc68-1ba3-11e7-8286-407dd1a1b50f.png)
 
 ## Example
 
