@@ -1,8 +1,8 @@
-# Userswitch
+# UserSwitch
 
 [![Gem Version](https://badge.fury.io/rb/userswitch.svg)](https://badge.fury.io/rb/userswitch)
 
-Userswitch is a Rails plugin for switching between commonly used roles and users. It's particularly useful for development and staging environments when you often need to switch between various accounts. It saves you from the hassle of logging in or out.
+UserSwitch is a Rails plugin for switching between commonly used roles and users. It's particularly useful for development and staging environments when you often need to switch between various accounts. It saves you from the hassle of logging in or out.
 
 ![alt](https://cloud.githubusercontent.com/assets/17185440/24801547/f2cb2c8a-1ba4-11e7-87a6-59911794d6c7.png)
 
