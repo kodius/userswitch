@@ -12,7 +12,7 @@ By default, the gem will output a chain of buttons as follows
 
 By clicking on a button, your Rails app will switch to a different user, that is, your session will change to that of a different account and save you the time you might otherwise spend clicking on logout links and filling in forms to log as a different user.
 
-Different roles can have different colors so as to be more noticeable.
+Different roles have different colors so as to be more noticeable. If we put mulitple "same role" users for testing, we can still see by color coding what role it belongs to.
 
 ![alt](https://cloud.githubusercontent.com/assets/17185440/24800120/04b1a614-1b9f-11e7-9584-3392ca40f125.gif)
 
