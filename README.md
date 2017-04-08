@@ -18,15 +18,15 @@ Different roles have different colors so as to be more noticeable. If we put mul
 
 ## Requirements
 ```ruby
-gem "bootstrap"
-gem "devise"
+gem 'bootstrap'
+gem 'devise'
 ```
 
 ## How to install
 
 Add it to your app's Gemfile and run bundle
 ```ruby
-gem "userswitch"
+gem 'userswitch'
 ```
 or install it manually
 ```ruby
