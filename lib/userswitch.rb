@@ -7,7 +7,7 @@ module Userswitch
     # if File.directory?('config/userswitch.yml')
       YAML.load_file('config/userswitch.yml')
     # else
-    #   raise 'Havent created config/userswitch.yml file try running rake userswitch:create_file'
+    #   raise 'Havent created config/userswitch.yml file try running rake userswitch:install'
     # end
   end
 

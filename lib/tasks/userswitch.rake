@@ -1,7 +1,7 @@
 namespace :userswitch do
   desc 'create yml file'
 
-  task :create_file do
+  task :install do
     path = 'config/userswitch.yml'
     content = "## available colors: [red, dark-blue, light-blue, green, yellow, gray, white]
     # name of role: color_name(need to be spelled right)

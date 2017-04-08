@@ -37,7 +37,7 @@ gem install userswitch
 Create userswitch.yml inside you config folder with:
 
 ```ruby
-rake userswitch:create_file
+rake userswitch:install
 ```
 
 Inside of your template/view, you can call users with (showing only users from yours userswitch.yml):
