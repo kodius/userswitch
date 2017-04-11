@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/userswitch.svg)](https://badge.fury.io/rb/userswitch)
 
-UserSwitch is a Rails plugin for switching between commonly used roles and users. It's particularly useful for development and staging environments when you often need to switch between various accounts. It saves you from the hassle of logging in or out.
+User Switch is a Rails plugin for switching between commonly used roles and users. It's particularly useful for development and staging environments when you often need to switch between various accounts. It saves you from the hassle of logging in or out.
 
 ![alt](https://cloud.githubusercontent.com/assets/17185440/24801547/f2cb2c8a-1ba4-11e7-87a6-59911794d6c7.png)
 
@@ -40,10 +40,10 @@ Create userswitch.yml inside you config folder with:
 rake userswitch:install
 ```
 
-Inside of your template/view, you can call users with (showing only users from yours userswitch.yml):
+Inside of your template/view, you can call users with (showing only users from your userswitch.yml file):
 
 ```ruby
 Userswitch.users(current_user)
 ```
 
-The above command will generate the required HTML output to make the switching work.
+The above command will generate the required HTML output to make the user switching work.
